@@ -4,6 +4,8 @@
 
 Welcome to **ShorterURLs**, a simple and intuitive tool designed to help you shorten your URLs quickly and efficiently. 
 
+![ShortenURL](https://github.com/ThatSINEWAVE/ShorterURLs/assets/133239148/aa135e7b-ce14-49e9-b402-db74e16eaae4)
+
 </div>
 
 ## Features
