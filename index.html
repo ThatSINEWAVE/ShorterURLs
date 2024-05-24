@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShorterURLs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="site-data/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="site-data/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="site-data/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="site-data/favicon-16x16.png">
+    <link rel="manifest" href="site-data/site.webmanifest">
+</head>
+<body>
+    <div id="main-container">
+        <div id="header">
+            <h1>ShorterURLs</h1>
+            <p>A simple tool to shorten your URLs.</p>
+        </div>
+        <div id="service-buttons">
+            <button onclick="selectService('ulvis')">Ulvis</button>
+            <button onclick="selectService('1pt')">1pt.co</button>
+            <button onclick="selectService('cleanuri')">CleanURI</button>
+            <button onclick="selectService('owo')">owo.vc</button>
+        </div>
+        <div id="shorten-url-container" style="display: none;">
+            <label for="long-url">Enter your long URL:</label>
+            <input type="text" id="long-url">
+            <button onclick="shortenUrl()">Shorten URL</button>
+        </div>
+        <div id="shortened-url-container" style="display: none;">
+            <p>Your short URL is ready:</p>
+            <input type="text" id="shortened-url" readonly>
+            <button onclick="copyToClipboard()">Copy</button>
+            <button onclick="reset()">Shorten another URL</button>
+        </div>
+    </div>
+    <footer>
+      <a href="https://discord.com/invite/2nHHHBWNDw" target="_blank">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://ko-fi.com/thatsinewave" target="_blank">
+        <i class="fas fa-heart"></i>
+      </a>
+      <a href="https://github.com/ThatSINEWAVE/ShortenURLs" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
